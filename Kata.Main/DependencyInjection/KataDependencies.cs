@@ -1,4 +1,6 @@
-﻿using Kata.Main.Interfaces;
+﻿using Kata.Data.Interfaces;
+using Kata.Data.Repositories;
+using Kata.Main.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -23,7 +25,8 @@ namespace Kata.Main.DependencyInjection
         {
             var services = new ServiceCollection();
             
-            services.AddSingleton<IStandardPrice, StandardPrice>();;
+            services.AddSingleton<IStandardPrice, StandardPrice>();
+            services.AddScoped<IProductRepo, ProductRepo>();
 
             return services;
         }
