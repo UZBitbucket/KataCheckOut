@@ -1,4 +1,5 @@
 ﻿using Kata.Data.Interfaces;
+using Kata.Domain;
 using Kata.Main.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -8,19 +9,21 @@ namespace Kata.Main
 {
     public class StandardPrice : IStandardPrice
     {
-        private readonly IProductRepo _productRepo;
-        public StandardPrice(IProductRepo productRepo)
-        {
-            _productRepo = productRepo;
-        }
 
-       
+        List<Product> products = new List<Product>()
+            {
+                new Product{SKU="A", Price=10M},
+                new Product{SKU="B", Price=15M},
+                new Product{SKU="C", Price=40M},
+                new Product{SKU="D", Price=50M},
+
+            };
 
         public decimal GetPrice(string sku)
         {
             decimal total = 0;
             char[] skuChar;
-            var products = _productRepo.GetProducts();
+            
 
             if (String.IsNullOrEmpty(sku))
             {
@@ -41,5 +44,7 @@ namespace Kata.Main
 
             return total;
         }
+
+       
     }
 }
