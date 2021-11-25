@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Domain", "Kata.Domain\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Main", "Kata.Main\Kata.Main.csproj", "{EECC71DC-44EB-4595-BF60-EBC44D444CCB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kata.Data", "Kata.Data\Kata.Data.csproj", "{C367C6AC-55CF-4657-929E-285CAF0C52D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EECC71DC-44EB-4595-BF60-EBC44D444CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EECC71DC-44EB-4595-BF60-EBC44D444CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EECC71DC-44EB-4595-BF60-EBC44D444CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C367C6AC-55CF-4657-929E-285CAF0C52D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C367C6AC-55CF-4657-929E-285CAF0C52D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C367C6AC-55CF-4657-929E-285CAF0C52D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C367C6AC-55CF-4657-929E-285CAF0C52D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
