@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Kata.Main.StandardPrice
+namespace Kata.Main
 {
     public class StandardPrice : IStandardPrice
     {
